@@ -11,7 +11,7 @@
   <meta property="og:locale" content="pt_BR">
   <title>Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo | UNCISAL</title>
 
-  <!-- Versão V.0.14 — 05/08/2026 -->
+  <!-- Versão V.0.15 — 06/08/2026 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -294,30 +294,48 @@
     }
     .route {
       display: grid;
-      grid-template-columns: 1fr 54px 1.15fr;
+      grid-template-columns: .78fr 24px 1fr 24px 1.35fr;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       padding: 11px 0;
       border-bottom: 1px solid rgba(255,255,255,.13);
     }
     .route:last-of-type { border-bottom: 0; }
-    .route-start strong, .route-end strong {
+    .route-start strong, .route-middle strong, .route-end strong {
       display: block;
-      font-size: 15px;
+      font-size: 14px;
     }
-    .route-start small, .route-end small {
+    .route-start small, .route-middle small, .route-end small {
       color: #bdd3d9;
-      font-size: 12px;
+      font-size: 10px;
     }
     .route-arrow {
       color: var(--amber-300);
-      font-size: 26px;
+      font-size: 19px;
+      text-align: center;
+    }
+    .route-middle {
+      padding: 10px 8px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 10px;
+      background: rgba(255,255,255,.07);
       text-align: center;
     }
     .route-end {
-      padding: 12px 14px;
+      padding: 12px 9px;
       border-radius: 12px;
-      background: rgba(41,179,173,.18);
+      background: var(--amber-500);
+      color: var(--navy-950);
+      box-shadow: 0 8px 22px rgba(245,166,59,.2);
+      text-align: center;
+    }
+    .route-end strong {
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .route-end small {
+      color: var(--navy-800);
+      font-weight: 700;
     }
     .hero-date {
       display: grid;
@@ -1000,7 +1018,31 @@
       .hero-actions .button { width: 100%; }
       .hero-actions .button-ghost { min-height: 46px; }
       .hero-card { padding: 22px; border-radius: 20px; }
-      .route { grid-template-columns: 1fr 34px 1.15fr; }
+      .route {
+        grid-template-columns: 1fr 18px 1.45fr;
+        gap: 6px;
+      }
+      .route-start {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .route-start::after {
+        content: "↓";
+        margin-left: auto;
+        color: var(--amber-300);
+        font-size: 18px;
+      }
+      .route > .route-arrow:nth-child(2) { display: none; }
+      .route-middle { grid-column: 1; }
+      .route > .route-arrow:nth-child(4) { grid-column: 2; }
+      .route-end { grid-column: 3; }
+      .route-start strong { font-size: 13px; }
+      .route-middle strong { font-size: 12px; }
+      .route-end strong { font-size: 13px; }
+      .route-start small, .route-middle small, .route-end small { font-size: 10px; }
       section { padding: 68px 0; }
       .section-head { margin-bottom: 34px; }
       .section-head p { font-size: 16px; }
@@ -1066,6 +1108,11 @@
         "@type": "Person",
         "name": "Aldemar Araujo Castro",
         "jobTitle": "Professor da UNCISAL"
+      },
+      {
+        "@type": "Person",
+        "name": "Ziraldo Cardoso",
+        "jobTitle": "Servidor da UNCISAL"
       }
     ],
     "maximumAttendeeCapacity": 30,
@@ -1111,16 +1158,21 @@
         </div>
 
         <aside class="hero-card" aria-label="Os quatro caminhos de convergência da oficina">
-          <div class="hero-card-label">Quatro caminhos para gerar impacto</div>
+          <div class="hero-card-label">Quatro caminhos para o empreendedorismo</div>
           <div class="route">
             <div class="route-start">
               <strong>Ensino</strong>
               <small>Práticas pedagógicas</small>
             </div>
             <div class="route-arrow" aria-hidden="true">→</div>
+            <div class="route-middle">
+              <strong>Produto / serviço</strong>
+              <small>Educacional</small>
+            </div>
+            <div class="route-arrow" aria-hidden="true">→</div>
             <div class="route-end">
-              <strong>Inovação</strong>
-              <small>Solução ou startup</small>
+              <strong>Empreendedorismo</strong>
+              <small>Impacto sustentável</small>
             </div>
           </div>
           <div class="route">
@@ -1129,9 +1181,14 @@
               <small>Ciência e evidências</small>
             </div>
             <div class="route-arrow" aria-hidden="true">→</div>
+            <div class="route-middle">
+              <strong>Produto / serviço</strong>
+              <small>Tecnológico</small>
+            </div>
+            <div class="route-arrow" aria-hidden="true">→</div>
             <div class="route-end">
-              <strong>Inovação</strong>
-              <small>Solução ou startup</small>
+              <strong>Empreendedorismo</strong>
+              <small>Impacto sustentável</small>
             </div>
           </div>
           <div class="route">
@@ -1140,9 +1197,14 @@
               <small>Extensão universitária</small>
             </div>
             <div class="route-arrow" aria-hidden="true">→</div>
+            <div class="route-middle">
+              <strong>Produto / serviço</strong>
+              <small>Social</small>
+            </div>
+            <div class="route-arrow" aria-hidden="true">→</div>
             <div class="route-end">
-              <strong>Inovação</strong>
-              <small>Solução ou startup</small>
+              <strong>Empreendedorismo</strong>
+              <small>Impacto sustentável</small>
             </div>
           </div>
           <div class="route">
@@ -1151,9 +1213,14 @@
               <small>Processos e serviços</small>
             </div>
             <div class="route-arrow" aria-hidden="true">→</div>
+            <div class="route-middle">
+              <strong>Produto / serviço</strong>
+              <small>Assistencial</small>
+            </div>
+            <div class="route-arrow" aria-hidden="true">→</div>
             <div class="route-end">
-              <strong>Inovação</strong>
-              <small>Solução ou startup</small>
+              <strong>Empreendedorismo</strong>
+              <small>Impacto sustentável</small>
             </div>
           </div>
           <div class="hero-date">
@@ -1363,7 +1430,7 @@
         <div class="section-head center">
           <span class="section-kicker">Quem conduz a oficina</span>
           <h2>Uma equipe para conduzir a convergência.</h2>
-          <p>O proponente está confirmado. Os espaços do segundo e do terceiro facilitador serão preenchidos após a definição da equipe completa.</p>
+          <p>Dois facilitadores estão confirmados. O espaço do terceiro facilitador será preenchido após a definição da equipe completa.</p>
         </div>
         <div class="facilitator-grid">
           <article class="facilitator-card">
@@ -1374,13 +1441,12 @@
               <p>Professor da UNCISAL. Conduzirá a integração entre os quatro campos universitários e a estruturação das oportunidades de inovação.</p>
             </div>
           </article>
-          <article class="facilitator-card is-placeholder">
-            <div class="facilitator-photo" aria-label="Espaço reservado para o segundo facilitador">F2</div>
+          <article class="facilitator-card">
+            <div class="facilitator-photo" aria-label="Iniciais de Ziraldo Cardoso">ZC</div>
             <div>
-              <span class="facilitator-role">Vaga reservada</span>
-              <h3>Segundo facilitador</h3>
-              <p>Espaço reservado para nome, função, formação e experiência relacionada à oficina.</p>
-              <span class="placeholder-note">Dados a confirmar</span>
+              <span class="facilitator-role">Convidado · ministrante · facilitador</span>
+              <h3>Ziraldo Cardoso</h3>
+              <p>Servidor da UNCISAL. Facilitará as atividades práticas, a análise das propostas e a definição dos próximos passos.</p>
             </div>
           </article>
           <article class="facilitator-card is-placeholder">
@@ -1453,7 +1519,7 @@
         <p>Oficina do 16º CACUN · Inovações Tecnológicas e Equidade · UNCISAL</p>
         <p><a href="https://eventos.uncisal.edu.br/evento/16-cacun" target="_blank" rel="noopener">Página oficial do evento</a></p>
       </div>
-      <div class="version">V.0.14 · 05/08/2026</div>
+      <div class="version">V.0.15 · 06/08/2026</div>
     </div>
   </footer>
 
