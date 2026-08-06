@@ -11,7 +11,7 @@
   <meta property="og:locale" content="pt_BR">
   <title>Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo | UNCISAL</title>
 
-  <!-- Versão V.0.13 — 05/08/2026 -->
+  <!-- Versão V.0.14 — 05/08/2026 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -720,15 +720,15 @@
     }
     .facilitator-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 24px;
     }
     .facilitator-card {
       display: grid;
-      grid-template-columns: 150px 1fr;
+      grid-template-columns: 1fr;
       gap: 26px;
-      align-items: center;
-      min-height: 240px;
+      align-items: start;
+      min-height: 360px;
       padding: 30px;
       border: 1px solid #eadfce;
       border-radius: 22px;
@@ -736,6 +736,7 @@
       box-shadow: var(--shadow-sm);
     }
     .facilitator-photo {
+      width: 118px;
       aspect-ratio: 1;
       display: grid;
       place-items: center;
@@ -746,6 +747,14 @@
       color: var(--teal-600);
       font-family: "DM Serif Display", Georgia, serif;
       font-size: 38px;
+    }
+    .facilitator-card.is-placeholder {
+      border-style: dashed;
+      background: rgba(255,255,255,.72);
+    }
+    .facilitator-card.is-placeholder .facilitator-photo {
+      border-style: dashed;
+      background: var(--sky);
     }
     .facilitator-role {
       display: block;
@@ -967,6 +976,10 @@
       .outcome-grid { grid-template-columns: 1fr 1fr; }
       .case-grid { grid-template-columns: 1fr 1fr; }
       .facilitator-grid { grid-template-columns: 1fr; }
+      .facilitator-card {
+        grid-template-columns: 140px 1fr;
+        min-height: 220px;
+      }
       .trust-grid { grid-template-columns: 1fr 1fr; }
       .trust-item:nth-child(2) { border-right: 0; }
       .trust-item:nth-child(-n+2) { border-bottom: 1px solid #eadfce; }
@@ -1007,7 +1020,7 @@
         min-height: 0;
         padding: 24px 20px;
       }
-      .facilitator-photo { font-size: 28px; }
+      .facilitator-photo { width: 92px; font-size: 28px; }
       .footer-grid { display: block; }
       .version { margin-top: 18px; text-align: left; }
       .mobile-cta { display: block; }
@@ -1053,11 +1066,6 @@
         "@type": "Person",
         "name": "Aldemar Araujo Castro",
         "jobTitle": "Professor da UNCISAL"
-      },
-      {
-        "@type": "Person",
-        "name": "Ziraldo Cardoso",
-        "jobTitle": "Servidor da UNCISAL"
       }
     ],
     "maximumAttendeeCapacity": 30,
@@ -1354,8 +1362,8 @@
       <div class="wrap">
         <div class="section-head center">
           <span class="section-kicker">Quem conduz a oficina</span>
-          <h2>Duas perspectivas para conduzir a convergência.</h2>
-          <p>Os ministrantes facilitarão o trabalho em grupos, o uso responsável da IA e a construção dos próximos passos.</p>
+          <h2>Uma equipe para conduzir a convergência.</h2>
+          <p>O proponente está confirmado. Os espaços do segundo e do terceiro facilitador serão preenchidos após a definição da equipe completa.</p>
         </div>
         <div class="facilitator-grid">
           <article class="facilitator-card">
@@ -1366,12 +1374,22 @@
               <p>Professor da UNCISAL. Conduzirá a integração entre os quatro campos universitários e a estruturação das oportunidades de inovação.</p>
             </div>
           </article>
-          <article class="facilitator-card">
-            <div class="facilitator-photo" aria-label="Iniciais de Ziraldo Cardoso">ZC</div>
+          <article class="facilitator-card is-placeholder">
+            <div class="facilitator-photo" aria-label="Espaço reservado para o segundo facilitador">F2</div>
             <div>
-              <span class="facilitator-role">Convidado · ministrante · facilitador</span>
-              <h3>Ziraldo Cardoso</h3>
-              <p>Servidor da UNCISAL. Facilitará as atividades práticas, a análise das propostas e a definição dos próximos passos.</p>
+              <span class="facilitator-role">Vaga reservada</span>
+              <h3>Segundo facilitador</h3>
+              <p>Espaço reservado para nome, função, formação e experiência relacionada à oficina.</p>
+              <span class="placeholder-note">Dados a confirmar</span>
+            </div>
+          </article>
+          <article class="facilitator-card is-placeholder">
+            <div class="facilitator-photo" aria-label="Espaço reservado para o terceiro facilitador">F3</div>
+            <div>
+              <span class="facilitator-role">Vaga reservada</span>
+              <h3>Terceiro facilitador</h3>
+              <p>Espaço reservado para nome, função, formação e experiência relacionada à oficina.</p>
+              <span class="placeholder-note">Dados a confirmar</span>
             </div>
           </article>
         </div>
@@ -1435,7 +1453,7 @@
         <p>Oficina do 16º CACUN · Inovações Tecnológicas e Equidade · UNCISAL</p>
         <p><a href="https://eventos.uncisal.edu.br/evento/16-cacun" target="_blank" rel="noopener">Página oficial do evento</a></p>
       </div>
-      <div class="version">V.0.13 · 05/08/2026</div>
+      <div class="version">V.0.14 · 05/08/2026</div>
     </div>
   </footer>
 
