@@ -11,7 +11,7 @@
   <meta property="og:locale" content="pt_BR">
   <title>Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo acadêmico | UNCISAL</title>
 
-  <!-- Versão V.0.21 — 06/08/2026 -->
+  <!-- Versão V.0.23 — 06/08/2026 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -793,6 +793,7 @@
     }
     .facilitator-photo {
       width: 118px;
+      height: 118px;
       aspect-ratio: 1;
       display: grid;
       place-items: center;
@@ -803,6 +804,11 @@
       color: var(--teal-600);
       font-family: "DM Serif Display", Georgia, serif;
       font-size: 38px;
+    }
+    img.facilitator-photo {
+      display: block;
+      object-fit: cover;
+      object-position: center;
     }
     .facilitator-card.is-placeholder {
       border-style: dashed;
@@ -1131,7 +1137,7 @@
         min-height: 0;
         padding: 24px 20px;
       }
-      .facilitator-photo { width: 92px; font-size: 28px; }
+      .facilitator-photo { width: 92px; height: 92px; font-size: 28px; }
       .footer-grid { display: block; }
       .version { margin-top: 18px; text-align: left; }
       .mobile-cta { display: block; }
@@ -1177,12 +1183,14 @@
         "@type": "Person",
         "name": "Aldemar Araujo",
         "jobTitle": "Professor da UNCISAL",
+        "image": "https://aldemararaujo.github.io/ponto/assets/facilitador-aldemar.jpg",
         "sameAs": "https://www.linkedin.com/in/aldemar-araujo/"
       },
       {
         "@type": "Person",
         "name": "Ziraldo Cardoso",
         "jobTitle": "Servidor da UNCISAL",
+        "image": "https://aldemararaujo.github.io/ponto/assets/facilitador-ziraldo.jpg",
         "sameAs": "https://www.linkedin.com/in/ziraldocardoso/"
       }
     ],
@@ -1518,11 +1526,11 @@
         <div class="section-head center">
           <span class="section-kicker">Quem conduz a oficina</span>
           <h2>Uma equipe para conduzir a convergência.</h2>
-          <p>Dois facilitadores estão confirmados. O espaço do terceiro facilitador será preenchido após a definição da equipe completa.</p>
+          <p>Dois facilitadores estão confirmados. O terceiro será um empreendedor, cujo nome será preenchido após a definição da equipe completa.</p>
         </div>
         <div class="facilitator-grid">
           <article class="facilitator-card">
-            <div class="facilitator-photo" aria-label="Iniciais de Aldemar Araujo">AA</div>
+            <img class="facilitator-photo" src="assets/facilitador-aldemar.jpg" alt="Foto de Aldemar Araujo" width="549" height="549">
             <div>
               <span class="facilitator-role">Proponente · ministrante · facilitador</span>
               <h3>Aldemar Araujo</h3>
@@ -1531,21 +1539,21 @@
             </div>
           </article>
           <article class="facilitator-card">
-            <div class="facilitator-photo" aria-label="Iniciais de Ziraldo Cardoso">ZC</div>
+            <img class="facilitator-photo" src="assets/facilitador-ziraldo.jpg" alt="Foto de Ziraldo Cardoso" width="549" height="549">
             <div>
               <span class="facilitator-role">Convidado · ministrante · facilitador</span>
               <h3>Ziraldo Cardoso</h3>
-              <p>Servidor da UNCISAL. Facilitará as atividades práticas, a análise das propostas e a definição dos próximos passos.</p>
+              <p>Servidor da UNCISAL. Conduzirá a análise das propostas e o planejamento da jornada do empreendedor.</p>
               <a class="facilitator-link" href="https://www.linkedin.com/in/ziraldocardoso/" target="_blank" rel="noopener" aria-label="Ver perfil de Ziraldo Cardoso no LinkedIn">Perfil no LinkedIn</a>
             </div>
           </article>
           <article class="facilitator-card is-placeholder">
             <div class="facilitator-photo" aria-label="Espaço reservado para o terceiro facilitador">F3</div>
             <div>
-              <span class="facilitator-role">Vaga reservada</span>
+              <span class="facilitator-role">Empreendedor · facilitador</span>
               <h3>Terceiro facilitador</h3>
-              <p>Espaço reservado para nome, função, formação e experiência relacionada à oficina.</p>
-              <span class="placeholder-note">Dados a confirmar</span>
+              <p>Empreendedor. Conduzirá a discussão sobre as oportunidades de empreendimento e feedback das ideias construídas.</p>
+              <span class="placeholder-note">Nome a confirmar</span>
             </div>
           </article>
         </div>
@@ -1609,7 +1617,7 @@
         <p>Oficina do 16º CACUN · Inovações Tecnológicas e Equidade · UNCISAL</p>
         <p><a href="https://eventos.uncisal.edu.br/evento/16-cacun" target="_blank" rel="noopener">Página oficial do evento</a></p>
       </div>
-      <div class="version">V.0.21 · 06/08/2026</div>
+      <div class="version">V.0.23 · 06/08/2026</div>
     </div>
   </footer>
 
