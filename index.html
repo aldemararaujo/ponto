@@ -26,7 +26,7 @@
   <meta name="twitter:image:alt" content="Ponto de Convergência — Ensino, Pesquisa, Extensão e Assistência, 16º CACUN">
   <title>Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo acadêmico | UNCISAL</title>
 
-  <!-- Versão V.0.26 — 13/08/2026 -->
+  <!-- Versão V.0.29 — 13/08/2026 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -802,21 +802,24 @@
     }
     .facilitator-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       gap: 24px;
     }
     .facilitator-card {
       display: grid;
+      grid-column: span 2;
       grid-template-columns: 1fr;
       gap: 26px;
       align-items: start;
-      min-height: 360px;
+      min-height: 390px;
       padding: 30px;
       border: 1px solid #eadfce;
       border-radius: 22px;
       background: #fff;
       box-shadow: var(--shadow-sm);
     }
+    .facilitator-card:nth-child(4) { grid-column: 2 / span 2; }
+    .facilitator-card:nth-child(5) { grid-column: 4 / span 2; }
     .facilitator-photo {
       width: 118px;
       height: 118px;
@@ -996,9 +999,12 @@
       .case-grid { grid-template-columns: 1fr 1fr; }
       .facilitator-grid { grid-template-columns: 1fr; }
       .facilitator-card {
+        grid-column: auto;
         grid-template-columns: 140px 1fr;
         min-height: 220px;
       }
+      .facilitator-card:nth-child(4),
+      .facilitator-card:nth-child(5) { grid-column: auto; }
       .trust-grid { grid-template-columns: 1fr 1fr; }
       .trust-item:nth-child(2) { border-right: 0; }
       .trust-item:nth-child(-n+2) { border-bottom: 1px solid #eadfce; }
@@ -1150,6 +1156,7 @@
           "@type": "Organization",
           "name": "TransformeTech"
         },
+        "image": "https://aldemararaujo.github.io/ponto/assets/facilitador-daniel.jpg",
         "sameAs": "https://www.linkedin.com/in/daniel-gomes-de-mello-b173bb99/"
       },
       {
@@ -1159,6 +1166,7 @@
           "@type": "Organization",
           "name": "IEBT"
         },
+        "image": "https://aldemararaujo.github.io/ponto/assets/facilitador-alcides.jpg",
         "sameAs": "https://www.linkedin.com/in/alcides-soares-0a342928/"
       }
     ],
@@ -1468,7 +1476,7 @@
           <article class="facilitator-card">
             <img class="facilitator-photo" src="assets/facilitador-aldemar.jpg" alt="Foto de Aldemar Araujo" width="549" height="549">
             <div>
-              <span class="facilitator-role">Proponente · ministrante · facilitador</span>
+              <span class="facilitator-role">Facilitador</span>
               <h3>Aldemar Araujo</h3>
               <p>Professor da UNCISAL. Conduzirá a integração entre os quatro campos universitários e a estruturação das oportunidades de inovação.</p>
               <a class="facilitator-link" href="https://www.linkedin.com/in/aldemar-araujo/" target="_blank" rel="noopener" aria-label="Ver perfil de Aldemar Araujo no LinkedIn">Perfil no LinkedIn</a>
@@ -1477,7 +1485,7 @@
           <article class="facilitator-card">
             <img class="facilitator-photo" src="assets/facilitador-ziraldo.jpg" alt="Foto de Ziraldo Cardoso" width="549" height="549">
             <div>
-              <span class="facilitator-role">Convidado · ministrante · facilitador</span>
+              <span class="facilitator-role">Facilitador</span>
               <h3>Ziraldo Cardoso</h3>
               <p>Servidor da UNCISAL. Conduzirá a análise das propostas e o planejamento da jornada do empreendedor.</p>
               <a class="facilitator-link" href="https://www.linkedin.com/in/ziraldocardoso/" target="_blank" rel="noopener" aria-label="Ver perfil de Ziraldo Cardoso no LinkedIn">Perfil no LinkedIn</a>
@@ -1486,26 +1494,26 @@
           <article class="facilitator-card">
             <div class="facilitator-photo" aria-hidden="true">PM</div>
             <div>
-              <span class="facilitator-role">UNCISAL · facilitador</span>
+              <span class="facilitator-role">Facilitador</span>
               <h3>Paulo Marinho</h3>
-              <p>Facilitador da UNCISAL.</p>
+              <p>Professor da UNCISAL. Conduzirá a simulação para o treinamento em empreendedorismo.</p>
             </div>
           </article>
           <article class="facilitator-card">
-            <div class="facilitator-photo" aria-hidden="true">DM</div>
+            <img class="facilitator-photo" src="assets/facilitador-daniel.jpg" alt="Foto de Daniel Mello" width="400" height="400">
             <div>
-              <span class="facilitator-role">TransformeTech · facilitador</span>
+              <span class="facilitator-role">Facilitador</span>
               <h3>Daniel Mello</h3>
-              <p>Facilitador da TransformeTech.</p>
+              <p>Facilitador da TransformeTech. Conduzirá a reflexão sobre o gap entre a universidade e a indústria.</p>
               <a class="facilitator-link" href="https://www.linkedin.com/in/daniel-gomes-de-mello-b173bb99/" target="_blank" rel="noopener" aria-label="Ver perfil de Daniel Mello no LinkedIn">Perfil no LinkedIn</a>
             </div>
           </article>
           <article class="facilitator-card">
-            <div class="facilitator-photo" aria-hidden="true">AS</div>
+            <img class="facilitator-photo" src="assets/facilitador-alcides.jpg" alt="Foto de Alcides Soares" width="400" height="400">
             <div>
-              <span class="facilitator-role">IEBT · facilitador</span>
+              <span class="facilitator-role">Facilitador</span>
               <h3>Alcides Soares</h3>
-              <p>Facilitador do IEBT.</p>
+              <p>Facilitador do IEBT. Conduzirá a reflexão sobre a importância da cultura do empreendedorismo na universidade.</p>
               <a class="facilitator-link" href="https://www.linkedin.com/in/alcides-soares-0a342928/" target="_blank" rel="noopener" aria-label="Ver perfil de Alcides Soares no LinkedIn">Perfil no LinkedIn</a>
             </div>
           </article>
@@ -1558,7 +1566,7 @@
         <p>Oficina do 16º CACUN · Inovações Tecnológicas e Equidade · UNCISAL</p>
         <p><a href="https://eventos.uncisal.edu.br/evento/16-cacun" target="_blank" rel="noopener">Página oficial do evento</a></p>
       </div>
-      <div class="version">V.0.26 · 13/08/2026</div>
+      <div class="version">V.0.29 · 13/08/2026</div>
     </div>
   </footer>
 
