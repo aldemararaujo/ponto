@@ -26,7 +26,7 @@
   <meta name="twitter:image:alt" content="Ponto de Convergência — Ensino, Pesquisa, Extensão e Assistência, 16º CACUN">
   <title>Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo acadêmico | UNCISAL</title>
 
-  <!-- Versão V.0.29 — 13/08/2026 -->
+  <!-- Versão V.0.30 — 13/08/2026 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -647,6 +647,36 @@
       text-underline-offset: 3px;
     }
 
+    .featured-reading { background: var(--paper); }
+    .reading-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 42px;
+      align-items: center;
+      padding: 42px 46px;
+      overflow: hidden;
+      border: 1px solid rgba(8,127,140,.2);
+      border-radius: 24px;
+      background:
+        radial-gradient(circle at 96% 10%, rgba(41,179,173,.2), transparent 18rem),
+        var(--navy-900);
+      color: #fff;
+      box-shadow: var(--shadow-md);
+    }
+    .reading-card .section-kicker { color: var(--amber-300); }
+    .reading-card h2 {
+      max-width: 760px;
+      margin: 8px 0 14px;
+      font-size: clamp(34px, 5vw, 54px);
+    }
+    .reading-card p {
+      max-width: 760px;
+      margin: 0;
+      color: #c7dbe1;
+      font-size: 16px;
+    }
+    .reading-card .button { white-space: nowrap; }
+
     .ai-lab {
       position: relative;
       overflow: hidden;
@@ -997,6 +1027,8 @@
       .hero-card { max-width: 650px; }
       .outcome-grid { grid-template-columns: 1fr 1fr; }
       .case-grid { grid-template-columns: 1fr 1fr; }
+      .reading-card { grid-template-columns: 1fr; }
+      .reading-card .button { justify-self: start; }
       .facilitator-grid { grid-template-columns: 1fr; }
       .facilitator-card {
         grid-column: auto;
@@ -1070,6 +1102,8 @@
       .section-head p { font-size: 16px; }
       .outcome-grid, .case-grid { grid-template-columns: 1fr; }
       .case-card { min-height: 300px; }
+      .reading-card { gap: 28px; padding: 32px 24px; }
+      .reading-card .button { width: 100%; }
       .ai-grid { gap: 40px; }
       .schedule-item { grid-template-columns: 1fr; gap: 6px; }
       .audience-box {
@@ -1147,7 +1181,9 @@
         "affiliation": {
           "@type": "Organization",
           "name": "UNCISAL"
-        }
+        },
+        "image": "https://aldemararaujo.github.io/ponto/assets/facilitador-paulo.jpg",
+        "sameAs": "https://www.linkedin.com/in/paulo-marinho-543300333"
       },
       {
         "@type": "Person",
@@ -1385,6 +1421,19 @@
       </div>
     </section>
 
+    <section class="featured-reading" aria-labelledby="reading-title">
+      <div class="wrap">
+        <article class="reading-card">
+          <div>
+            <span class="section-kicker">Leitura recomendada · Usina de Pesquisa</span>
+            <h2 id="reading-title">Cinco portas de entrada para a inovação universitária</h2>
+            <p>Entenda como ensino, pesquisa, extensão, assistência e gestão podem originar oportunidades — e como escolher a rota adequada entre melhoria institucional, tecnologia social, licenciamento e empresa nascente, com IA crítica e equidade.</p>
+          </div>
+          <a class="button" href="https://www.usinadepesquisa.com/?p=7913" target="_blank" rel="noopener">Ler o artigo completo</a>
+        </article>
+      </div>
+    </section>
+
     <section class="cases" id="casos">
       <div class="wrap">
         <div class="section-head">
@@ -1492,11 +1541,12 @@
             </div>
           </article>
           <article class="facilitator-card">
-            <div class="facilitator-photo" aria-hidden="true">PM</div>
+            <img class="facilitator-photo" src="assets/facilitador-paulo.jpg" alt="Foto de Paulo Marinho" width="100" height="100">
             <div>
               <span class="facilitator-role">Facilitador</span>
               <h3>Paulo Marinho</h3>
               <p>Professor da UNCISAL. Conduzirá a simulação para o treinamento em empreendedorismo.</p>
+              <a class="facilitator-link" href="https://www.linkedin.com/in/paulo-marinho-543300333" target="_blank" rel="noopener" aria-label="Ver perfil de Paulo Marinho no LinkedIn">Perfil no LinkedIn</a>
             </div>
           </article>
           <article class="facilitator-card">
@@ -1566,7 +1616,7 @@
         <p>Oficina do 16º CACUN · Inovações Tecnológicas e Equidade · UNCISAL</p>
         <p><a href="https://eventos.uncisal.edu.br/evento/16-cacun" target="_blank" rel="noopener">Página oficial do evento</a></p>
       </div>
-      <div class="version">V.0.29 · 13/08/2026</div>
+      <div class="version">V.0.30 · 13/08/2026</div>
     </div>
   </footer>
 
