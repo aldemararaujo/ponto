@@ -5,13 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#072F49">
   <meta name="description" content="Oficina presencial da UNCISAL sobre inovação e empreendedorismo originados no ensino, na pesquisa, na extensão e na assistência, com IA generativa responsável e equidade. Dia 22 de setembro de 2026, no 16º CACUN.">
+  <link rel="canonical" href="https://aldemararaujo.github.io/ponto/">
+  <link rel="icon" href="favicon.ico" sizes="any">
   <meta property="og:title" content="Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo acadêmico">
-  <meta property="og:description" content="Transforme práticas, pesquisas, demandas comunitárias e desafios assistenciais em soluções com propósito, IA responsável e equidade.">
+  <meta property="og:description" content="Transforme oportunidades do ensino, da pesquisa, da extensão e das demandas da comunidade e da assistência em soluções com propósito, IA responsável e equidade.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aldemararaujo.github.io/ponto/">
+  <meta property="og:site_name" content="Ponto de Convergência">
   <meta property="og:locale" content="pt_BR">
+  <meta property="og:image" content="https://aldemararaujo.github.io/ponto/assets/og-ponto-convergencia-v025.png">
+  <meta property="og:image:secure_url" content="https://aldemararaujo.github.io/ponto/assets/og-ponto-convergencia-v025.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ponto de Convergência — Ensino, Pesquisa, Extensão e Assistência, 16º CACUN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ponto de Convergência | 16º CACUN">
+  <meta name="twitter:description" content="Ensino, pesquisa, extensão e assistência em uma rota de inovação com IA responsável e equidade.">
+  <meta name="twitter:image" content="https://aldemararaujo.github.io/ponto/assets/og-ponto-convergencia-v025.png">
+  <meta name="twitter:image:alt" content="Ponto de Convergência — Ensino, Pesquisa, Extensão e Assistência, 16º CACUN">
   <title>Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo acadêmico | UNCISAL</title>
 
-  <!-- Versão V.0.23 — 06/08/2026 -->
+  <!-- Versão V.0.26 — 13/08/2026 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -620,6 +635,17 @@
       font-weight: 400;
     }
     .case-card p { margin: 0; font-size: 14px; opacity: .9; }
+    .case-source {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 16px;
+      color: inherit;
+      font-size: 12px;
+      font-weight: 800;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
 
     .ai-lab {
       position: relative;
@@ -959,91 +985,6 @@
     footer a { color: var(--amber-300); font-weight: 700; }
     .version { text-align: right; white-space: nowrap; }
 
-    .mobile-cta {
-      position: fixed;
-      right: 14px;
-      bottom: 14px;
-      left: 14px;
-      z-index: 90;
-      display: none;
-    }
-    .mobile-cta .button {
-      width: 100%;
-      box-shadow: 0 14px 36px rgba(5,38,59,.3);
-    }
-
-    .summary-dialog {
-      width: min(680px, calc(100% - 28px));
-      max-height: min(88vh, 760px);
-      padding: 0;
-      overflow: auto;
-      border: 0;
-      border-radius: 24px;
-      background: #fff;
-      color: var(--ink);
-      box-shadow: 0 30px 100px rgba(3, 29, 44, .42);
-    }
-    .summary-dialog::backdrop {
-      background: rgba(3, 29, 44, .76);
-      backdrop-filter: blur(5px);
-    }
-    .summary-dialog-card {
-      position: relative;
-      padding: 44px;
-    }
-    .summary-dialog-close {
-      position: absolute;
-      top: 18px;
-      right: 18px;
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border: 1px solid var(--line);
-      border-radius: 50%;
-      background: var(--paper);
-      color: var(--navy-900);
-      cursor: pointer;
-      font-size: 25px;
-      line-height: 1;
-    }
-    .summary-dialog-close:hover { background: var(--sky); }
-    .summary-dialog h2 {
-      max-width: 520px;
-      margin: 0 0 18px;
-      color: var(--navy-900);
-      font-size: clamp(34px, 5vw, 48px);
-    }
-    .summary-dialog-text {
-      margin-bottom: 28px;
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 1.8;
-    }
-    .summary-dialog-highlight {
-      margin: -8px 0 28px;
-      padding: 16px 18px;
-      border-radius: 12px;
-      background: var(--sky);
-      color: var(--navy-900);
-      font-size: 14px;
-      font-weight: 700;
-    }
-    .summary-dialog-actions {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 14px;
-      padding-top: 24px;
-      border-top: 1px solid var(--line);
-    }
-    .summary-dialog-note {
-      flex-basis: 100%;
-      margin: 0;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
     @media (max-width: 980px) {
       .nav a:not(.button) { display: none; }
       .hero-grid, .problem-grid {
@@ -1140,9 +1081,6 @@
       .facilitator-photo { width: 92px; height: 92px; font-size: 28px; }
       .footer-grid { display: block; }
       .version { margin-top: 18px; text-align: left; }
-      .mobile-cta { display: block; }
-      .summary-dialog-card { padding: 38px 24px 28px; }
-      .summary-dialog-actions .button { width: 100%; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -1160,6 +1098,9 @@
     "@type": "EducationEvent",
     "name": "Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo acadêmico",
     "description": "Oficina presencial sobre inovação e empreendedorismo originados no ensino, na pesquisa, na extensão e na assistência, com IA generativa responsável e equidade.",
+    "url": "https://aldemararaujo.github.io/ponto/",
+    "image": "https://aldemararaujo.github.io/ponto/assets/og-ponto-convergencia-v025.png",
+    "inLanguage": "pt-BR",
     "startDate": "2026-09-22T14:00:00-03:00",
     "endDate": "2026-09-22T17:00:00-03:00",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -1176,7 +1117,8 @@
     },
     "organizer": {
       "@type": "Organization",
-      "name": "UNCISAL"
+      "name": "Universidade Estadual de Ciências da Saúde de Alagoas — UNCISAL",
+      "url": "https://www.uncisal.edu.br/"
     },
     "performer": [
       {
@@ -1192,10 +1134,41 @@
         "jobTitle": "Servidor da UNCISAL",
         "image": "https://aldemararaujo.github.io/ponto/assets/facilitador-ziraldo.jpg",
         "sameAs": "https://www.linkedin.com/in/ziraldocardoso/"
+      },
+      {
+        "@type": "Person",
+        "name": "Paulo Marinho",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "UNCISAL"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Daniel Mello",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "TransformeTech"
+        },
+        "sameAs": "https://www.linkedin.com/in/daniel-gomes-de-mello-b173bb99/"
+      },
+      {
+        "@type": "Person",
+        "name": "Alcides Soares",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "IEBT"
+        },
+        "sameAs": "https://www.linkedin.com/in/alcides-soares-0a342928/"
       }
     ],
     "maximumAttendeeCapacity": 30,
-    "url": "https://eventos.uncisal.edu.br/evento/16-cacun/inscricao"
+    "offers": {
+      "@type": "Offer",
+      "url": "https://eventos.uncisal.edu.br/evento/16-cacun/inscricao",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2026-08-13"
+    }
   }
   </script>
 </head>
@@ -1209,7 +1182,6 @@
         <a href="#experiencia">A experiência</a>
         <a href="#ia-generativa">IA generativa</a>
         <a href="#facilitadores">Facilitadores</a>
-        <a class="button button-small" href="https://eventos.uncisal.edu.br/evento/16-cacun/inscricao" target="_blank" rel="noopener">Quero participar</a>
       </nav>
     </div>
   </header>
@@ -1227,15 +1199,12 @@
       <div class="wrap hero-grid">
         <div>
           <span class="event-tag">Oficina presencial · 16º CACUN</span>
-          <p class="official-title"><span>Título completo da oficina</span>Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo acadêmico</p>
-          <h1>Quatro portas de entrada. Um caminho para gerar <em>impacto.</em></h1>
+          <h1>Ponto de Convergência</h1>
           <p class="hero-lead">
-            Descubra como práticas de ensino, resultados de pesquisa, demandas da comunidade e desafios assistenciais podem se transformar em soluções reais — com <strong>IA generativa responsável, equidade e orientação prática.</strong>
+            Transforme oportunidades do ensino, da pesquisa, da extensão e das demandas da comunidade e da assistência em soluções reais — com <strong>IA generativa responsável, equidade e orientação prática.</strong>
           </p>
           <div class="hero-actions">
             <a class="button" href="https://eventos.uncisal.edu.br/evento/16-cacun/inscricao" target="_blank" rel="noopener">Garantir minha vaga</a>
-            <a class="button button-ghost" href="#experiencia">Ver o que vou aprender</a>
-            <button class="button button-ghost" id="open-summary" type="button">Ler o resumo da oficina</button>
           </div>
           <div class="microcopy" aria-label="Informações rápidas">
             <span>Não exige experiência prévia</span>
@@ -1244,8 +1213,8 @@
           </div>
         </div>
 
-        <aside class="hero-card" aria-label="Os cinco caminhos de convergência da oficina">
-          <div class="hero-card-label">Ou Cinco caminhos para o empreendedorismo acadêmico?</div>
+        <aside class="hero-card" aria-label="As quatro origens de oportunidades da oficina">
+          <div class="hero-card-label">Quatro origens. Diferentes rotas de inovação.</div>
           <div class="route">
             <div class="route-start">
               <strong>Ensino</strong>
@@ -1278,8 +1247,8 @@
           </div>
           <div class="route">
             <div class="route-start">
-              <strong>Comunidade</strong>
-              <small>Extensão universitária</small>
+              <strong>Extensão</strong>
+              <small>Demandas da comunidade</small>
             </div>
             <div class="route-arrow" aria-hidden="true">→</div>
             <div class="route-middle">
@@ -1306,19 +1275,6 @@
               <strong>Startup</strong>
             </div>
           </div>
-          <div class="route">
-            <div class="route-start">
-              <strong>Será revelado na oficina</strong>
-            </div>
-            <div class="route-arrow" aria-hidden="true">→</div>
-            <div class="route-middle">
-              <strong>Produto / serviço</strong>
-            </div>
-            <div class="route-arrow" aria-hidden="true">→</div>
-            <div class="route-end">
-              <strong>Startup</strong>
-            </div>
-          </div>
           <div class="hero-date">
             <div class="date-day">22</div>
             <div>
@@ -1330,19 +1286,10 @@
       </div>
     </section>
 
-    <div class="trust-strip" aria-label="Características da oficina">
-      <div class="wrap trust-grid">
-        <div class="trust-item"><strong>Quatro campos integrados</strong><span>Ensino, pesquisa, extensão e assistência</span></div>
-        <div class="trust-item"><strong>IA generativa responsável</strong><span>Comparar, explorar e decidir com crítica</span></div>
-        <div class="trust-item"><strong>Equidade na prática</strong><span>Barreiras, inclusão e impacto social</span></div>
-        <div class="trust-item"><strong>Entrega concreta</strong><span>Quadro, matriz e próximos passos</span></div>
-      </div>
-    </div>
-
     <section class="problem" id="experiencia">
       <div class="wrap problem-grid">
         <div class="problem-quote">
-          <p>“Tenho uma prática, uma pesquisa, uma demanda da comunidade ou um desafio assistencial. Isso pode virar inovação?”</p>
+          <p>“Tenho uma prática, uma pesquisa, uma ação de extensão ou demanda da comunidade, ou um desafio assistencial. Isso pode virar inovação?”</p>
           <span>Se você reconhece uma necessidade real, esta oficina ajuda a construir o próximo passo.</span>
         </div>
         <div>
@@ -1354,7 +1301,7 @@
           <div class="check-list">
             <div class="check-item">
               <div class="check-icon" aria-hidden="true">1</div>
-              <div><strong>Reconheça a origem</strong><p>Identifique oportunidades que nascem no ensino, na pesquisa, na comunidade ou na assistência.</p></div>
+              <div><strong>Reconheça a origem</strong><p>Identifique oportunidades que nascem no ensino, na pesquisa, na extensão e nas demandas da comunidade ou na assistência.</p></div>
             </div>
             <div class="check-item">
               <div class="check-icon" aria-hidden="true">2</div>
@@ -1380,22 +1327,22 @@
           <article class="outcome-card">
             <div class="outcome-number">01</div>
             <h3>Quadro de Convergência</h3>
-            <p>Organize origem, problema, usuários, evidências, proposta de valor, viabilidade e rota de desenvolvimento.</p>
+            <p>Organize problema, usuários, evidências, proposta de valor e rota.</p>
           </article>
           <article class="outcome-card">
             <div class="outcome-number">02</div>
             <h3>Matriz de Equidade</h3>
-            <p>Reconheça quem pode ser beneficiado, quem corre risco de exclusão e como reduzir barreiras de acesso.</p>
+            <p>Identifique benefícios, exclusões e barreiras de acesso.</p>
           </article>
           <article class="outcome-card">
             <div class="outcome-number">03</div>
             <h3>IA com pensamento crítico</h3>
-            <p>Compare formulações, explore alternativas, identifique vieses e revise cada resposta antes de decidir.</p>
+            <p>Explore alternativas e identifique vieses antes de decidir.</p>
           </article>
           <article class="outcome-card">
             <div class="outcome-number">04</div>
             <h3>Próximo passo definido</h3>
-            <p>Apresente sua proposta em um minuto e escolha o que deve ser testado, protegido ou articulado primeiro.</p>
+            <p>Escolha o que testar, proteger ou articular primeiro.</p>
           </article>
         </div>
       </div>
@@ -1412,19 +1359,19 @@
         <div class="ai-flow" aria-label="Aplicações da inteligência artificial generativa na oficina">
           <div class="ai-step">
             <div class="ai-step-number">1</div>
-            <div><strong>Comparar formulações</strong><p>Examinar diferentes maneiras de descrever o problema e revelar pressupostos ou lacunas.</p></div>
+            <div><strong>Comparar formulações</strong></div>
           </div>
           <div class="ai-step">
             <div class="ai-step-number">2</div>
-            <div><strong>Explorar alternativas</strong><p>Gerar caminhos possíveis sem confundir sugestões da IA com evidências verificadas.</p></div>
+            <div><strong>Explorar alternativas</strong></div>
           </div>
           <div class="ai-step">
             <div class="ai-step-number">3</div>
-            <div><strong>Identificar vieses e exclusões</strong><p>Investigar quem pode ficar de fora e quais barreiras precisam ser reduzidas.</p></div>
+            <div><strong>Identificar vieses e exclusões</strong></div>
           </div>
           <div class="ai-step">
             <div class="ai-step-number">4</div>
-            <div><strong>Revisar antes de decidir</strong><p>Conferir coerência, segurança, viabilidade e equidade com responsabilidade humana.</p></div>
+            <div><strong>Revisar antes de decidir</strong></div>
           </div>
         </div>
       </div>
@@ -1442,11 +1389,13 @@
             <span class="case-tag">Pesquisa · caso documentado</span>
             <h3>NAtiva</h3>
             <p>Da iniciação científica em um laboratório universitário a uma startup de saúde baseada na biodiversidade brasileira.</p>
+            <a class="case-source" href="https://www2.ufjf.br/critt/2024/03/08/nativa-conheca-a-startup-fundada-por-pesquisadoras-da-ufjf-com-foco-em-saude-a-partir-dos-ativos-da-biodiversidade-brasileira/" target="_blank" rel="noopener">Fonte: UFJF ↗</a>
           </article>
           <article class="case-card">
             <span class="case-tag">Extensão · caso documentado</span>
             <h3>Foguete de Leitura</h3>
             <p>Um projeto de extensão em Alagoas transformado em produto para crianças e adolescentes hospitalizados.</p>
+            <a class="case-source" href="https://noticias.ufal.br/ufal/noticias/2018/5/sorriso-de-plantao-inaugura-foguete-de-leitura" target="_blank" rel="noopener">Fonte: UFAL ↗</a>
           </article>
           <article class="case-card">
             <span class="case-tag">Ensino · desafio aplicado</span>
@@ -1467,17 +1416,12 @@
         <div class="section-head center">
           <span class="section-kicker">Programação</span>
           <h2>Uma tarde para encontrar a rota de uma oportunidade.</h2>
-          <p>Conteúdo, casos, IA responsável e prática em uma sequência que leva da identificação do problema ao próximo passo.</p>
           <p class="schedule-date">Terça-feira · 22 de setembro de 2026 · 14h às 17h</p>
         </div>
         <div class="schedule-list">
           <div class="schedule-item">
-            <div class="schedule-time">14h00 — 14h20</div>
-            <div><strong>Acolhimento, objetivos e diagnóstico inicial</strong><p>Experiências presentes na sala e oportunidades já percebidas no ensino, na pesquisa, na comunidade e na assistência.</p></div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">14h20 — 14h50</div>
-            <div><strong>Ponto de Convergência: do ensino, da pesquisa, da comunidade e da assistência à inovação e à startup</strong><p>Como reconhecer a origem da oportunidade e escolher entre melhoria institucional, tecnologia social, produto, serviço, licenciamento ou startup.</p></div>
+            <div class="schedule-time">14h00 — 14h50</div>
+            <div><strong>Acolhimento e Ponto de Convergência</strong><p>Diagnóstico inicial e rotas de oportunidades do ensino, pesquisa, extensão e demandas da comunidade e assistência.</p></div>
           </div>
           <div class="schedule-item schedule-break">
             <div class="schedule-time">14h50 — 15h00</div>
@@ -1492,16 +1436,8 @@
             <div><strong>Pausa para hidratação</strong></div>
           </div>
           <div class="schedule-item">
-            <div class="schedule-time">15h40 — 16h30</div>
-            <div><strong>Quadro de Convergência e Matriz de Equidade</strong><p>Construção em grupos a partir de uma oportunidade real ou hipotética, com apoio crítico da IA generativa.</p></div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">16h30 — 16h55</div>
-            <div><strong>Apresentações e avaliação formativa</strong><p>Sínteses de um minuto e devolutivas sobre clareza, coerência, viabilidade, equidade e uso responsável da IA.</p></div>
-          </div>
-          <div class="schedule-item">
-            <div class="schedule-time">16h55 — 17h00</div>
-            <div><strong>Próximos passos e encerramento</strong><p>Definição do primeiro movimento para validar, proteger, articular ou desenvolver cada proposta.</p></div>
+            <div class="schedule-time">15h40 — 17h00</div>
+            <div><strong>Construção, apresentações e próximos passos</strong><p>Quadro de Convergência, Matriz de Equidade, sínteses de um minuto, devolutivas e primeiro movimento de cada proposta.</p></div>
           </div>
         </div>
       </div>
@@ -1512,7 +1448,7 @@
         <div>
           <span class="section-kicker">Para quem é</span>
           <h2>Para quem enxerga oportunidades dentro da universidade.</h2>
-          <p>Docentes, estudantes de graduação e pós-graduação, profissionais da assistência e servidores técnico-administrativos da UNCISAL interessados em transformar experiências de ensino, resultados de pesquisa, demandas comunitárias ou desafios assistenciais em soluções inovadoras. Não é necessário entender de negócios ou inteligência artificial.</p>
+          <p>Docentes, estudantes de graduação e pós-graduação, profissionais da assistência e servidores técnico-administrativos da UNCISAL interessados em transformar experiências de ensino, resultados de pesquisa, ações de extensão e demandas da comunidade ou desafios assistenciais em soluções inovadoras. Não é necessário entender de negócios ou inteligência artificial.</p>
         </div>
         <div class="seat-box" aria-label="Número máximo de participantes">
           <strong>30</strong>
@@ -1526,7 +1462,7 @@
         <div class="section-head center">
           <span class="section-kicker">Quem conduz a oficina</span>
           <h2>Uma equipe para conduzir a convergência.</h2>
-          <p>Dois facilitadores estão confirmados. O terceiro será um empreendedor, cujo nome será preenchido após a definição da equipe completa.</p>
+          <p>Cinco facilitadores reunindo experiências da UNCISAL, TransformeTech e IEBT.</p>
         </div>
         <div class="facilitator-grid">
           <article class="facilitator-card">
@@ -1547,13 +1483,30 @@
               <a class="facilitator-link" href="https://www.linkedin.com/in/ziraldocardoso/" target="_blank" rel="noopener" aria-label="Ver perfil de Ziraldo Cardoso no LinkedIn">Perfil no LinkedIn</a>
             </div>
           </article>
-          <article class="facilitator-card is-placeholder">
-            <div class="facilitator-photo" aria-label="Espaço reservado para o terceiro facilitador">F3</div>
+          <article class="facilitator-card">
+            <div class="facilitator-photo" aria-hidden="true">PM</div>
             <div>
-              <span class="facilitator-role">Empreendedor · facilitador</span>
-              <h3>Terceiro facilitador</h3>
-              <p>Empreendedor. Conduzirá a discussão sobre as oportunidades de empreendimento e feedback das ideias construídas.</p>
-              <span class="placeholder-note">Nome a confirmar</span>
+              <span class="facilitator-role">UNCISAL · facilitador</span>
+              <h3>Paulo Marinho</h3>
+              <p>Facilitador da UNCISAL.</p>
+            </div>
+          </article>
+          <article class="facilitator-card">
+            <div class="facilitator-photo" aria-hidden="true">DM</div>
+            <div>
+              <span class="facilitator-role">TransformeTech · facilitador</span>
+              <h3>Daniel Mello</h3>
+              <p>Facilitador da TransformeTech.</p>
+              <a class="facilitator-link" href="https://www.linkedin.com/in/daniel-gomes-de-mello-b173bb99/" target="_blank" rel="noopener" aria-label="Ver perfil de Daniel Mello no LinkedIn">Perfil no LinkedIn</a>
+            </div>
+          </article>
+          <article class="facilitator-card">
+            <div class="facilitator-photo" aria-hidden="true">AS</div>
+            <div>
+              <span class="facilitator-role">IEBT · facilitador</span>
+              <h3>Alcides Soares</h3>
+              <p>Facilitador do IEBT.</p>
+              <a class="facilitator-link" href="https://www.linkedin.com/in/alcides-soares-0a342928/" target="_blank" rel="noopener" aria-label="Ver perfil de Alcides Soares no LinkedIn">Perfil no LinkedIn</a>
             </div>
           </article>
         </div>
@@ -1569,31 +1522,19 @@
         <div class="faq-list">
           <details>
             <summary>Preciso ter uma startup ou uma ideia pronta?</summary>
-            <p>Não. Você pode trabalhar com uma prática de ensino, pesquisa, demanda comunitária, desafio assistencial ou caso hipotético criado durante a dinâmica.</p>
-          </details>
-          <details>
-            <summary>Preciso ter experiência com empreendedorismo?</summary>
-            <p>Não. A proposta é justamente apresentar os conceitos essenciais de maneira aplicada, acessível e conectada à realidade universitária.</p>
-          </details>
-          <details>
-            <summary>Preciso saber usar inteligência artificial generativa?</summary>
-            <p>Não. O uso será orientado, com exemplos previamente preparados. A IA servirá para comparar problemas e explorar alternativas, sempre com análise crítica e decisão humana.</p>
-          </details>
-          <details>
-            <summary>A oficina é somente para estudantes?</summary>
-            <p>Não. A atividade foi desenhada para docentes, estudantes de graduação e pós-graduação, profissionais da assistência e servidores técnico-administrativos da UNCISAL.</p>
+            <p>Não. Você pode trabalhar com ensino, pesquisa, extensão e demandas da comunidade, assistência ou um caso hipotético.</p>
           </details>
           <details>
             <summary>Preciso levar computador ou ter acesso à internet?</summary>
-            <p>Não. Celular, tablet ou computador são opcionais. Haverá material impresso e exemplos preparados para que a experiência não dependa de equipamento próprio, conta individual ou conexão com a internet.</p>
+            <p>Não. Equipamentos são opcionais; haverá material impresso e exemplos preparados.</p>
           </details>
           <details>
             <summary>O que vou produzir durante a oficina?</summary>
-            <p>Seu grupo construirá um Quadro de Convergência, uma Matriz de Equidade, uma síntese de um minuto e um plano inicial de próximos passos.</p>
+            <p>Quadro de Convergência, Matriz de Equidade, síntese de um minuto e próximos passos.</p>
           </details>
           <details>
             <summary>Onde a oficina acontece?</summary>
-            <p>Na UNCISAL, presencialmente, dentro da programação do 16º Congresso Acadêmico e Científico da UNCISAL — CACUN.</p>
+            <p>Presencialmente na UNCISAL, durante o 16º CACUN.</p>
           </details>
         </div>
       </div>
@@ -1602,8 +1543,8 @@
     <section class="final-cta">
       <div class="wrap final-cta-inner">
         <span class="urgency">22 de setembro · 14h às 17h · 30 vagas</span>
-        <h2>A próxima solução pode começar em uma aula, pesquisa, comunidade ou desafio assistencial.</h2>
-        <p>Reserve sua vaga e transforme uma oportunidade universitária em uma rota de inovação com propósito, equidade e impacto.</p>
+        <h2>A próxima solução pode começar no ensino, na pesquisa, na extensão e nas demandas da comunidade ou na assistência.</h2>
+        <p>Transforme uma oportunidade universitária em uma rota de inovação com propósito, equidade e impacto.</p>
         <a class="button" href="https://eventos.uncisal.edu.br/evento/16-cacun/inscricao" target="_blank" rel="noopener">Quero garantir minha vaga</a>
         <div class="final-note">Inscrição realizada na página oficial do 16º CACUN.</div>
       </div>
@@ -1617,50 +1558,9 @@
         <p>Oficina do 16º CACUN · Inovações Tecnológicas e Equidade · UNCISAL</p>
         <p><a href="https://eventos.uncisal.edu.br/evento/16-cacun" target="_blank" rel="noopener">Página oficial do evento</a></p>
       </div>
-      <div class="version">V.0.23 · 06/08/2026</div>
+      <div class="version">V.0.26 · 13/08/2026</div>
     </div>
   </footer>
 
-  <div class="mobile-cta" aria-label="Inscrição">
-    <a class="button" href="https://eventos.uncisal.edu.br/evento/16-cacun/inscricao" target="_blank" rel="noopener">Garantir minha vaga</a>
-  </div>
-
-  <dialog class="summary-dialog" id="summary-dialog" aria-labelledby="summary-title">
-    <div class="summary-dialog-card">
-      <button class="summary-dialog-close" id="close-summary" type="button" aria-label="Fechar resumo">×</button>
-      <span class="section-kicker">Resumo em 100 palavras</span>
-      <h2 id="summary-title">Resumo da oficina</h2>
-      <p class="summary-dialog-text">
-        A oficina Ponto de Convergência mostra como oportunidades nascidas no ensino, na pesquisa, na extensão e na assistência podem transformar-se em inovação, tecnologia social, produto, serviço ou startup. Docentes, discentes e servidores assistenciais trabalharão em grupos com casos e desafios aplicados. Com apoio da IA generativa, compararão formulações de problemas, explorarão alternativas e identificarão vieses. Cada equipe construirá um Quadro de Convergência e uma Matriz de Equidade, definindo usuários, evidências, proposta de valor, riscos e próximos passos. Ao final, apresentará uma síntese de um minuto e receberá devolutiva sobre clareza, viabilidade, acessibilidade, equidade e uso crítico e responsável da IA.
-      </p>
-      <p class="summary-dialog-highlight">Você não precisa chegar com uma startup pronta. Precisa apenas trazer curiosidade para reconhecer uma oportunidade e descobrir a rota mais adequada.</p>
-      <div class="summary-dialog-actions">
-        <a class="button" href="https://eventos.uncisal.edu.br/evento/16-cacun/inscricao" target="_blank" rel="noopener">Quero garantir minha vaga</a>
-        <p class="summary-dialog-note">A inscrição será concluída na página oficial do 16º CACUN.</p>
-      </div>
-    </div>
-  </dialog>
-
-  <script>
-    (() => {
-      const dialog = document.getElementById("summary-dialog");
-      const openButton = document.getElementById("open-summary");
-      const closeButton = document.getElementById("close-summary");
-
-      openButton.addEventListener("click", () => dialog.showModal());
-      closeButton.addEventListener("click", () => dialog.close());
-
-      dialog.addEventListener("click", (event) => {
-        const bounds = dialog.getBoundingClientRect();
-        const clickedOutside =
-          event.clientX < bounds.left ||
-          event.clientX > bounds.right ||
-          event.clientY < bounds.top ||
-          event.clientY > bounds.bottom;
-
-        if (clickedOutside) dialog.close();
-      });
-    })();
-  </script>
 </body>
 </html>
