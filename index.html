@@ -26,7 +26,7 @@
   <meta name="twitter:image:alt" content="Ponto de Convergência — Ensino, Pesquisa, Extensão e Assistência, 16º CACUN">
   <title>Ponto de Convergência: ensino, pesquisa, extensão e assistência — quatro origens do empreendedorismo acadêmico | UNCISAL</title>
 
-  <!-- Versão V.0.33 — 13/08/2026 -->
+  <!-- Versão V.0.34 — 13/08/2026 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -573,10 +573,11 @@
     .cases { background: #fff; }
     .case-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(6, 1fr);
       gap: 18px;
     }
     .case-card {
+      grid-column: span 2;
       min-height: 330px;
       display: flex;
       flex-direction: column;
@@ -607,6 +608,12 @@
       border-color: #e1b96f;
       background: var(--cream);
     }
+    .case-card:nth-child(5) {
+      grid-column: 3 / span 2;
+      border: 2px dashed #a7a0c8;
+      background: #f0eef8;
+      color: var(--navy-900);
+    }
     .case-tag {
       align-self: flex-start;
       padding: 6px 10px;
@@ -620,13 +627,18 @@
       text-transform: uppercase;
     }
     .case-card:nth-child(3) .case-tag,
-    .case-card:nth-child(4) .case-tag {
+    .case-card:nth-child(4) .case-tag,
+    .case-card:nth-child(5) .case-tag {
       background: #d8eeee;
       color: var(--teal-600);
     }
     .case-card:nth-child(4) .case-tag {
       background: #f8e4bd;
       color: #8f4a0c;
+    }
+    .case-card:nth-child(5) .case-tag {
+      background: #ddd8f0;
+      color: #514887;
     }
     .case-card h3 {
       margin: 40px 0 10px;
@@ -1027,6 +1039,8 @@
       .hero-card { max-width: 650px; }
       .outcome-grid { grid-template-columns: 1fr 1fr; }
       .case-grid { grid-template-columns: 1fr 1fr; }
+      .case-card,
+      .case-card:nth-child(5) { grid-column: auto; }
       .reading-card { grid-template-columns: 1fr; }
       .reading-card .button { justify-self: start; }
       .facilitator-grid { grid-template-columns: 1fr; }
@@ -1453,7 +1467,7 @@
       <div class="wrap">
         <div class="section-head">
           <span class="section-kicker">Casos e desafios que abrem caminhos</span>
-          <h2>Quatro origens. Muitas rotas possíveis.</h2>
+          <h2>Cinco origens. Muitas rotas possíveis.</h2>
           <p>Casos documentados e desafios aplicados mostram que a inovação universitária pode nascer em qualquer campo da instituição.</p>
         </div>
         <div class="case-grid">
@@ -1478,6 +1492,11 @@
             <span class="case-tag">Assistência · desafio aplicado</span>
             <h3>Desafio assistencial</h3>
             <p>Como fluxos, dados e necessidades dos serviços de saúde podem revelar oportunidades de inovação e empreendedorismo assistencial.</p>
+          </article>
+          <article class="case-card">
+            <span class="case-tag">Gestão · desafio aplicado</span>
+            <h3>Desafio de gestão</h3>
+            <p>Como o diploma digital pode modernizar emissão, registro, validação e acesso a documentos acadêmicos, reduzindo tempo, custos e riscos de fraude.</p>
           </article>
         </div>
       </div>
@@ -1631,7 +1650,7 @@
         <p>Oficina do 16º CACUN · Inovações Tecnológicas e Equidade · UNCISAL</p>
         <p><a href="https://eventos.uncisal.edu.br/evento/16-cacun" target="_blank" rel="noopener">Página oficial do evento</a></p>
       </div>
-      <div class="version">V.0.33 · 13/08/2026</div>
+      <div class="version">V.0.34 · 13/08/2026</div>
     </div>
   </footer>
 
